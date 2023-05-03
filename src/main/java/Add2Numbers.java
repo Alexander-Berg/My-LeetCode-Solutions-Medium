@@ -1,15 +1,20 @@
 public class Add2Numbers {
+    public class ListNode {
+        //  Definition for singly-linked list.
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
 
-     //  Definition for singly-linked list.
-      public class ListNode {
-          int val;
-         ListNode next;
-          ListNode() {}
-          ListNode(int val) { this.val = val; }
-          ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-      }
 
-    class Solution {
+
+    public ListNode addTwoNumbers(Object o, Object o1) {
+        return null;
+    }
+
+    public class Solution {
         public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
             ListNode dummy = new ListNode(0); // creating an dummy list
             ListNode curr = dummy; // intialising an pointer
