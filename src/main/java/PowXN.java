@@ -1,5 +1,5 @@
 public class PowXN {
-    class Solution {
+    public static class Solution {
         public double myPow(double x, int n) {
 
             // Check if x is within the given constraints

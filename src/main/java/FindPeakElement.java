@@ -1,6 +1,6 @@
 public class FindPeakElement {
 
-    class Solution {
+    public static class Solution {
         public int findPeakElement(int[] nums) {
             int lo=0,hi = nums.length-1;
             while(lo<hi){

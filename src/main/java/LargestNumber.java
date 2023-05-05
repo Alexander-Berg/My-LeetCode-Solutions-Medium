@@ -3,7 +3,7 @@ import java.util.Comparator;
 
 public class LargestNumber {
 
-    class Solution {
+    public static class Solution {
         public class Comparable implements Comparator<Integer> {
             @Override
             public int compare(Integer a,Integer b) {

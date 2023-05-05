@@ -1,5 +1,5 @@
 public class MaximumProductSubarray {
-    class Solution {
+    public static class Solution {
         public int maxProduct(int[] nums) {
             int curr = 1;
             int i , j , len = nums.length;

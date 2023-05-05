@@ -2,54 +2,61 @@ package test;
 
 import org.junit.Test;
 import org.junit.Before; 
-import org.junit.After; 
-
+import org.junit.After;
+import static org.junit.Assert.*;
+import java.util.List;
 /** 
 * PalindromePartitioning Tester. 
 *
  * @author <Alexander Berg>
-* @since <pre>May 3, 2023</pre> 
+* @since <pre>May 4 2023</pre>
 * @version 1.0 
-*/ 
-public class PalindromePartitioningTest { 
-
-@Before
-public void before() throws Exception { 
-} 
-
-@After
-public void after() throws Exception { 
-} 
-
-/** 
-* 
-* Method: partition(String s) 
-* 
-*/ 
-@Test
-public void testPartition() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: helper(int index, String s, List<String> path, List<List<String>> res) 
-* 
-*/ 
-@Test
-public void testHelper() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: isPalindrome(String s, int start, int end) 
-* 
-*/ 
-@Test
-public void testIsPalindrome() throws Exception { 
-//TODO: Test goes here... 
-} 
+*/
 
 
-} 
+public class PalindromePartitioningTest {
+
+    @Before
+    public void before() throws Exception {
+    }
+
+    @After
+    public void after() throws Exception {
+    }
+
+
+    @Test
+    public void testPalindromePartitioning() {
+        PalindromePartitioning.Solution pp = new PalindromePartitioning.Solution();
+        List<List<String>> result = pp.partition("aab");
+        assertEquals(2, result.size());
+        assertTrue(result.contains(List.of("a", "a", "b")));
+        assertTrue(result.contains(List.of("aa", "b")));
+    }
+
+    @Test
+    public void testPalindromePartitioningEmptyString() {
+        PalindromePartitioning.Solution pp = new PalindromePartitioning.Solution();
+        List<List<String>> result = pp.partition("");
+        assertEquals(1, result.size());
+        assertTrue(result.contains(List.of()));
+    }
+
+    @Test
+    public void testPalindromePartitioningSingleCharacter() {
+        PalindromePartitioning.Solution pp = new PalindromePartitioning.Solution();
+        List<List<String>> result = pp.partition("a");
+        assertEquals(1, result.size());
+        assertTrue(result.contains(List.of("a")));
+    }
+
+    @Test
+    public void testPalindromePartitioningAllCharactersSame() {
+        PalindromePartitioning.Solution pp = new PalindromePartitioning.Solution();
+        List<List<String>> result = pp.partition("ccc");
+        assertEquals(3, result.size());
+        assertTrue(result.contains(List.of("c", "c", "c")));
+        assertTrue(result.contains(List.of("cc", "c")));
+        assertTrue(result.contains(List.of("c", "cc")));
+    }
+}

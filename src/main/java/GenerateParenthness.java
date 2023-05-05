@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenerateParenthness {
-    class Solution {
+    public static class Solution {
         public List<String> generateParenthesis(int n) {
             List<String> result = new ArrayList<>(); // initialize the result list
             generate(result, "", n, n); // call the recursive helper function

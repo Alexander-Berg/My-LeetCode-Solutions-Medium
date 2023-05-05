@@ -1,5 +1,5 @@
 public class SetMatrixZeroes {
-    class Solution {
+    public static class Solution {
         public void setZeroes(int[][] m) {
             int r = m.length, c = m[0].length;
             boolean[][] zeros = new boolean[r][c];

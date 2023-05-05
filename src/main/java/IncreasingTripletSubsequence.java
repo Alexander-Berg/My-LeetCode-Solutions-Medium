@@ -1,6 +1,6 @@
 public class IncreasingTripletSubsequence {
 
-    class Solution {
+    public static class Solution {
         public boolean increasingTriplet(int[] arr) {
             int a = Integer.MAX_VALUE, b = Integer.MAX_VALUE;
             for(int val : arr){

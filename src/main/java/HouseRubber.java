@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class HouseRubber {
-    class Solution {
+    public static class Solution {
         public int rob(int[] nums) {
             int[] dp = new int[nums.length];
             Arrays.fill(dp, -1);

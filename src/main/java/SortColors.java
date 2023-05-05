@@ -1,5 +1,5 @@
 public class SortColors {
-    class Solution {
+   public static class Solution {
         public void sortColors(int[] nums) {
             int s=nums.length,k=0;
             int[] arr= new int[s];

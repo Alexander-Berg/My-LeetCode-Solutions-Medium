@@ -6,7 +6,7 @@ import java.util.Map;
 public class PopulatingNextRightPointersEachNode {
 
 // Definition for a Node.
-class Node {
+public static class Node {
     public int val;
     public Node left;
     public Node right;
@@ -27,7 +27,7 @@ class Node {
 };
 
 
-    class Solution {
+    public static class Solution {
         public Node connect(Node node) {
             Map<Integer, List<Node>> map = new HashMap<>();
             goDFS(0, node, map);

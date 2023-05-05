@@ -1,7 +1,7 @@
 import java.util.HashSet;
 
 public class LongestConsecutiveSequence {
-    class Solution {
+    public static class Solution {
         public int longestConsecutive(int[] nums) {
             if(nums.length==0) return 0;
             int length=1;

@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 public class RotateImage {
-    class Solution {
+    public static class Solution {
         public void rotate(int[][] matrix) {
             int row = matrix.length;
             Stack<Integer> stk = new Stack<>();

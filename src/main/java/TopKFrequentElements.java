@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class TopKFrequentElements {
-    class Solution {
+    public static class Solution {
         public int[] topKFrequent(int[] nums, int k) {
             Map<Integer,Integer> map= new TreeMap<Integer,Integer>();
             ArrayList<Integer> list= new ArrayList<Integer>();

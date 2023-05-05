@@ -1,10 +1,10 @@
 public class CopyListRandomPointer {
 
 // Definition for a Node.
-class Node {
-    int val;
-    Node next;
-    Node random;
+public static class Node {
+    public int val;
+    public Node next;
+    public Node random;
 
     public Node(int val) {
         this.val = val;
@@ -14,7 +14,7 @@ class Node {
 }
 
 
-    class Solution {
+    public static class Solution {
         public Node copyRandomList(Node head) {
             Node itr=head;
             Node front=head;

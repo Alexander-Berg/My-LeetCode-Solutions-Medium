@@ -1,5 +1,5 @@
 public class LongestPalindromicSubstring {
-    class Solution {
+   public static class Solution {
         int maxLen = 0;
         int lo = 0;
         public String longestPalindrome(String s) {

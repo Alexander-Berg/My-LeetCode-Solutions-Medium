@@ -1,15 +1,17 @@
 public class OddEvenLinkedList {
 
      // Definition for singly-linked list.
-      public class ListNode {
-          int val;
-          ListNode next;
+      public static class ListNode {
+          public int val;
+          public ListNode next;
          ListNode() {}
-         ListNode(int val) { this.val = val; }
+         public ListNode(int val) { this.val = val; }
          ListNode(int val, ListNode next) { this.val = val; this.next = next; }
       }
 
-    class Solution {
+
+
+    public static class Solution {
         public ListNode oddEvenList(ListNode head) {
             ListNode es=null,ee=null,os=null,oe = null;
             // es->even start  ee->even end  os->odd start  oe->odd end

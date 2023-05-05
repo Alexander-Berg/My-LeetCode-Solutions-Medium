@@ -1,5 +1,5 @@
 public class PerfectSquares {
-    class Solution {
+    public static class Solution {
         Integer memo[];
         int Ans=Integer.MAX_VALUE;
         public int numSquares(int n) {

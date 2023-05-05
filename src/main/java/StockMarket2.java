@@ -1,5 +1,5 @@
 public class StockMarket2 {
-    class Solution {
+    public static class Solution {
         public int maxProfit(int[] prices) {
             int sell=prices[0],bou=prices[0];
             int pro=0;

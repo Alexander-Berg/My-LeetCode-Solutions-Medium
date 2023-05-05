@@ -2,44 +2,67 @@ package test;
 
 import org.junit.Test;
 import org.junit.Before; 
-import org.junit.After; 
-
+import org.junit.After;
+import static org.junit.Assert.*;
 /** 
 * WordSearch Tester. 
 *
  * @author <Alexander Berg>
-* @since <pre>May 3, 2023</pre> 
+* @since <pre>May 4, 2023</pre>
 * @version 1.0 
-*/ 
-public class WordSearchTest { 
+*/
 
-@Before
-public void before() throws Exception { 
-} 
+public class WordSearchTest {
 
-@After
-public void after() throws Exception { 
-} 
+    @Before
+    public void before() throws Exception {
+    }
 
-/** 
-* 
-* Method: exist(char[][] board, String word) 
-* 
-*/ 
-@Test
-public void testExist() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @After
+    public void after() throws Exception {
+    }
 
-/** 
-* 
-* Method: dfs(int idx, int row, int col, boolean[][] visiting, char[][] board, String word) 
-* 
-*/ 
-@Test
-public void testDfs() throws Exception { 
-//TODO: Test goes here... 
-} 
+    @Test
+    public void testExistReturnsTrue() {
+        WordSearch.Solution solution = new WordSearch.Solution();
+        char[][] board = {
+                {'A', 'B', 'C', 'E'},
+                {'S', 'F', 'C', 'S'},
+                {'A', 'D', 'E', 'E'}
+        };
+        String word = "ABCCED";
+        assertTrue(solution.exist(board, word));
+    }
 
+    @Test
+    public void testExistReturnsFalse() {
+        WordSearch.Solution solution = new WordSearch.Solution();
+        char[][] board = {
+                {'A', 'B', 'C', 'E'},
+                {'S', 'F', 'C', 'S'},
+                {'A', 'D', 'E', 'E'}
+        };
+        String word = "ABCB";
+        assertFalse(solution.exist(board, word));
+    }
 
-} 
+    @Test
+    public void testExistWithEmptyWordReturnsTrue() {
+        WordSearch.Solution solution = new WordSearch.Solution();
+        char[][] board = {
+                {'A', 'B', 'C', 'E'},
+                {'S', 'F', 'C', 'S'},
+                {'A', 'D', 'E', 'E'}
+        };
+        String word = "";
+        assertTrue(solution.exist(board, word));
+    }
+
+    @Test
+    public void testExistWithEmptyBoardReturnsFalse() {
+        WordSearch.Solution solution = new WordSearch.Solution();
+        char[][] board = {};
+        String word = "ABCB";
+        assertFalse(solution.exist(board, word));
+    }
+}

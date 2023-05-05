@@ -1,15 +1,15 @@
 public class RemoveNNodeEndList {
 
      // Definition for singly-linked list.
-      public class ListNode {
-         int val;
-         ListNode next;
+      public static class ListNode {
+         public int val;
+         public ListNode next;
          ListNode() {}
-          ListNode(int val) { this.val = val; }
+          public ListNode(int val) { this.val = val; }
          ListNode(int val, ListNode next) { this.val = val; this.next = next; }
      }
 
-    class Solution {
+    public static class Solution {
         public ListNode removeNthFromEnd(ListNode head, int n) {
 
             // Create a temporary node and a counter to find the length of the linked list

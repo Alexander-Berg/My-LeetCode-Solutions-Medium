@@ -4,7 +4,7 @@ import java.util.Set;
 import java.util.Stack;
 
 public class EvaluateReversePolishNotation {
-    class Solution {
+    public static class Solution {
         public int evalRPN(String[] tokens) {
             Stack<Integer> stack = new Stack<>() ;
             Set<String> o = new HashSet<>(Arrays.asList("+", "-", "*", "/")) ;

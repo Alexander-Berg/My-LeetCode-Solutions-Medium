@@ -1,5 +1,5 @@
 public class SmallestElementSortedMatrix {
-    class Solution {
+    public static class Solution {
         public int kthSmallest(int[][] matrix, int k) {
             int n= matrix.length;
             int low = matrix[0][0];

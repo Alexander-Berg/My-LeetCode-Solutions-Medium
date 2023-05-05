@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class CoinChange {
-    class Solution {
+    public static class Solution {
         public int coinChange(int[] coins, int amount) {
             Arrays.sort(coins);
             boolean allMultiply = true;

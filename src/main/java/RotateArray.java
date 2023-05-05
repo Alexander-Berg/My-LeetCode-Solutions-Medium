@@ -1,5 +1,5 @@
 public class RotateArray {
-    class Solution {
+    public static class Solution {
 
         public static void reverse(int nums[], int start, int end){
             // While start index is less than end index

@@ -1,5 +1,5 @@
 public class SurroundedRegion {
-    class Solution {
+    public static class Solution {
         public void solve(char[][] grid) {
             for(int i=0;i<grid.length;i++){
                 if(grid[i][0]!='X')

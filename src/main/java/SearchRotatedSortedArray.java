@@ -1,5 +1,5 @@
 public class SearchRotatedSortedArray {
-    class Solution {
+    public static class Solution {
         public int search(int[] nums, int target) {
             int size = nums.length;
             int i =0;

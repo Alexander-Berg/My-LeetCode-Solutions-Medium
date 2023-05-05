@@ -1,5 +1,5 @@
 public class ProductArrayExceptSelf {
-    class Solution {
+    public static class Solution {
         public int[] productExceptSelf(int[] nums) {
 
             int[]freq=new int[nums.length];

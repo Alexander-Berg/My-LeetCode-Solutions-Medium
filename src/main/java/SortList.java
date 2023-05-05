@@ -1,17 +1,17 @@
 public class SortList {
 
       //Definition for singly-linked list.
-      public class ListNode {
-          int val;
-          ListNode next;
+      public static class ListNode {
+          public int val;
+          public ListNode next;
           ListNode() {}
-          ListNode(int val) { this.val = val; }
+          public ListNode(int val) { this.val = val; }
           ListNode(int val, ListNode next) { this.val = val; this.next = next; }
       }
 
 
 
-    public class Solution {
+    public static class Solution {
 
         public ListNode sortList(ListNode head) {
             if (head == null || head.next == null)
@@ -59,5 +59,9 @@ public class SortList {
             return l.next;
         }
 
+        public class sortList extends ListNode {
+            public sortList(Object o) {
+            }
+        }
     }
 }

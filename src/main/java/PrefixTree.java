@@ -1,7 +1,7 @@
 import java.util.HashSet;
 
 public class PrefixTree {
-    class Trie {
+    public static class Trie {
 
         HashSet<String> set;
 

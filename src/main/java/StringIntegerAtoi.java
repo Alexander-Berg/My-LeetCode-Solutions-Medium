@@ -1,5 +1,4 @@
 public class StringIntegerAtoi {
-    class Solution {
         public int myAtoi(String s) {
 
             int len=s.length();
@@ -66,4 +65,4 @@ public class StringIntegerAtoi {
 
 
     }
-}
+

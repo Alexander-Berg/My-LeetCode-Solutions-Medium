@@ -1,5 +1,5 @@
 public class BinaryTreeZigzagLevelOrderTraversal {
-    class Solution {
+    public static class Solution {
         public int numDecodings(String s) {
             int n =s.length();
             int ans[] = new int[n+1];

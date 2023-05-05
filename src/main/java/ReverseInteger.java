@@ -1,5 +1,5 @@
 public class ReverseInteger {
-    class Solution {
+    public static class Solution {
         public int reverse(int x) {
             long finalNum = 0;
             while(x!=0){

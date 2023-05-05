@@ -3,7 +3,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class CourseSchedule {
-    class Solution {
+    public static class Solution {
         Set<Integer> set = new HashSet();
         public boolean canFinish(int n, int[][] prerequisites) {
             int [] count = new int[n];

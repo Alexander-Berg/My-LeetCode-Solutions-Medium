@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PalindromePartitioning {
-    class Solution {
+    public static class Solution {
         public List<List<String>> partition(String s) {
 
             List<List<String>> res = new ArrayList<>(); // list to store all possible palindrome partitions

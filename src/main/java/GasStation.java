@@ -1,5 +1,5 @@
 public class GasStation {
-    class Solution {
+    public static class Solution {
         public int canCompleteCircuit(int[] gas, int[] cost) {
             // Initialize totalGas and totalCost to 0
             int totalGas = 0, totalCost = 0;

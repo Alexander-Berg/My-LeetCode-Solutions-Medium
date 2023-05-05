@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 public class InsertDeleteGetRandomO1 {
-    class RandomizedSet {
+    public static class RandomizedSet {
         HashSet<Integer> hs;
         public RandomizedSet() {
             hs=new HashSet<>();

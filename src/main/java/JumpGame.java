@@ -1,5 +1,5 @@
 public class JumpGame {
-    class Solution {
+    public static class Solution {
         public boolean canJump(int[] nums) {
             if(nums.length <= 1){
                 return true;

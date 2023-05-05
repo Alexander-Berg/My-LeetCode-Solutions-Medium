@@ -1,17 +1,17 @@
 public class LowestCommonAncestorBinaryTree {
 
     // Definition for a binary tree node.
-    public class TreeNode {
+    public static class TreeNode {
         int val;
-        TreeNode left;
-        TreeNode right;
+        public TreeNode left;
+        public TreeNode right;
 
-        TreeNode(int x) {
+        public TreeNode(int x) {
             val = x;
         }
 
-
-        class Solution {
+    }
+       public static class Solution {
             public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
                 if (root == null) return null;
                 TreeNode lh = lowestCommonAncestor(root.left, p, q);
@@ -34,6 +34,6 @@ public class LowestCommonAncestorBinaryTree {
                 return false;
             }
         }
-    }
+
 }
 

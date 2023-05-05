@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ValidSudoku {
-    class Solution {
+    public static class Solution {
         public boolean isValidSudoku(char[][] board) {
             Set seen = new HashSet();
             for (int i=0; i<9; ++i) {

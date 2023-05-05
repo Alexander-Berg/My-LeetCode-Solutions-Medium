@@ -1,9 +1,9 @@
 import java.util.Random;
 
 public class ShuffleArray {
-    class Solution {
-        private int originalArray [] = null;
-        private int shuffledArray [] = null;
+    public static class Solution {
+        private int[] originalArray = null;
+        private int[] shuffledArray = null;
         private Random random = null;
 
         public Solution(int[] nums) {

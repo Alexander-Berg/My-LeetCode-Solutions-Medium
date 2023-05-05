@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.*;
 public class GroupAnagrams {
 
-    class Solution {
+    public static class Solution {
         public List<List<String>> groupAnagrams(String[] strs) {
 
             Map<String, ArrayList<String>> map = new HashMap<>();

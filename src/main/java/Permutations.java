@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Permutations {
-    class Solution {
+    public static class Solution {
         public List<List<Integer>> permute(int[] nums) {
             List<List<Integer>> list = new ArrayList<>();
 

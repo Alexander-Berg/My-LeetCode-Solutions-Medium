@@ -1,5 +1,5 @@
 public class LongestSubstringAtLeastKRepeatingCharacters {
-    class Solution {
+    public static class Solution {
         public int longestSubstring(String s, int k) {
             if (s == null || s.length() == 0) return 0;
             if (k<2) return s.length();

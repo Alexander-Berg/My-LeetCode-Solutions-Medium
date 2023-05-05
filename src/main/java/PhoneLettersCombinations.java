@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PhoneLettersCombinations {
-    class Solution {
+    public static class Solution {
         public List<String> letterCombinations(String digits) {
             var n = digits.length();
             if (n == 0) return new ArrayList<>();

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Subsets {
-    class Solution {
+    public static class Solution {
         static void subsequence(int i,int[] arr, List<Integer> lst, List<List<Integer>> res){
             if(res.contains(lst)) return;
             if(i==arr.length){

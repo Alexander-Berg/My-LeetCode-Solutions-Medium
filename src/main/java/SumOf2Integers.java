@@ -1,5 +1,5 @@
 public class SumOf2Integers {
-    class Solution {
+    public static class Solution {
         public int getSum(int a, int b) {
 
             while(b!=0)

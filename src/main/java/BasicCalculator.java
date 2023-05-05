@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 public class BasicCalculator {
-    class Solution {
+    public static class Solution {
         public int calculate(String s) {
             int res=0,curr=0,i=0,n=s.length();
             char op='+';

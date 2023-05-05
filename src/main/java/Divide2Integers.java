@@ -1,5 +1,5 @@
 public class Divide2Integers {
-    class Solution {
+    public static class Solution {
         public int divide(int A, int B) {
             if (A == 1 << 31 && B == -1) return (1 << 31) - 1;
             int a = Math.abs(A), b = Math.abs(B), res = 0, x = 0;

@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 public class FractionReccuringDecimal {
-    class Solution {
+    public static class Solution {
         public String fractionToDecimal(int n, int d)
         {
             long a = Math.abs((long)n);

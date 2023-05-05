@@ -1,5 +1,5 @@
 public class FirstLastPositionElementSortedArray {
-    class Solution {
+    public static class Solution {
         public int[] searchRange(int[] nums, int target) {
             int left = 0 ;
             int right = nums.length -1;

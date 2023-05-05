@@ -1,11 +1,11 @@
 public class BinaryTreePreorderInorderTraversal {
 
     // Definition for a binary tree node.
-      public class TreeNode {
+      public static class TreeNode {
           int val;
           TreeNode left;
           TreeNode right;
-          TreeNode() {}
+          public TreeNode() {}
           TreeNode(int val) { this.val = val; }
           TreeNode(int val, TreeNode left, TreeNode right) {
               this.val = val;
@@ -14,7 +14,7 @@ public class BinaryTreePreorderInorderTraversal {
           }
       }
 
-    class Solution {
+   public class Solution {
         int idx = 0;
         public TreeNode buildTree(int[] preorder, int[] inorder) {
             //Approach: Using recursion

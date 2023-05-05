@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 public class CountPrimes {
-    class Solution {
         public int countPrimes(int n) {
             if(n<2){
                 return 0 ;
@@ -25,4 +24,4 @@ public class CountPrimes {
         }
     }
 
-}
+

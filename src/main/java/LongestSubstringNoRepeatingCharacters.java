@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LongestSubstringNoRepeatingCharacters {
-    class Solution {
+    public static class Solution {
         public int lengthOfLongestSubstring(String s) {
             Map<Character, Integer> map = new HashMap<>();
             int i = 0;

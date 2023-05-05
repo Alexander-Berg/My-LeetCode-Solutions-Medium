@@ -1,4 +1,4 @@
-class MinStack {
+public class MinStack {
     private Node head;
 
     public void push(int x) {

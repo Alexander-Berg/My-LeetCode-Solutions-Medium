@@ -1,5 +1,5 @@
 public class CountSay {
-    class Solution {
+    public static class Solution {
         public String countAndSay(int n) {
             if(n==1) return "1"; //base case
             String prev = countAndSay(n-1); //get the n-1 string

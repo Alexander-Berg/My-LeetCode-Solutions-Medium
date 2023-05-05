@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class WiggleSort {
-    class Solution {
+    public static class Solution {
         public void wiggleSort(int[] nums) {
             int n=nums.length-1;
             //copy values to new array

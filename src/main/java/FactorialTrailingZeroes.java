@@ -1,5 +1,5 @@
 public class FactorialTrailingZeroes {
-    class Solution {
+    public static class Solution {
         public int trailingZeroes(int n) {
             int result = 0;
             if (n >= 5) result += n / 5;

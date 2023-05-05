@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Set;
 
 public class WordBreak {
-    class Solution {
+    public static class Solution {
         public boolean wordBreak(String s,  List<String> wordDict) {
             int n=s.length();
             boolean[] dp=new boolean[n+1];

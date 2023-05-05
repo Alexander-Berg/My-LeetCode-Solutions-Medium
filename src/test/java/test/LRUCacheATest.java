@@ -2,84 +2,55 @@ package test;
 
 import org.junit.Test; 
 import org.junit.Before; 
-import org.junit.After; 
-
+import org.junit.After;
+import static org.junit.Assert.assertEquals;
 /** 
 * LRUCacheA Tester. 
 *
  * @author <Alexander Berg>
 * @since <pre>May 3, 2023</pre> 
 * @version 1.0 
-*/ 
-public class LRUCacheATest { 
+*/
 
-@Before
-public void before() throws Exception { 
-} 
+public class LRUCacheATest {
+    LRUCacheA.LRUCache cache;
 
-@After
-public void after() throws Exception { 
-} 
+    @Before
+    public void setup() {
 
-/** 
-* 
-* Method: get(int key) 
-* 
-*/ 
-@Test
-public void testGet() throws Exception { 
-//TODO: Test goes here... 
-} 
-
-/** 
-* 
-* Method: put(int key, int value) 
-* 
-*/ 
-@Test
-public void testPut() throws Exception { 
-//TODO: Test goes here... 
-} 
+    }
+    @After
+    public void after() throws Exception {
+    }
 
 
-/** 
-* 
-* Method: remove(Node node) 
-* 
-*/ 
-@Test
-public void testRemove() throws Exception { 
-//TODO: Test goes here... 
-/* 
-try { 
-   Method method = LRUCacheA.getClass().getMethod("remove", Node.class); 
-   method.setAccessible(true); 
-   method.invoke(<Object>, <Parameters>); 
-} catch(NoSuchMethodException e) { 
-} catch(IllegalAccessException e) { 
-} catch(InvocationTargetException e) { 
-} 
-*/ 
-} 
+    @Test
+    public void testCacheCapacity() {
+        cache.put(1, 1);
+        cache.put(2, 2);
+        cache.put(3, 3);
+        assertEquals(cache.get(1), -1);
+    }
 
-/** 
-* 
-* Method: insert(Node node) 
-* 
-*/ 
-@Test
-public void testInsert() throws Exception { 
-//TODO: Test goes here... 
-/* 
-try { 
-   Method method = LRUCacheA.getClass().getMethod("insert", Node.class); 
-   method.setAccessible(true); 
-   method.invoke(<Object>, <Parameters>); 
-} catch(NoSuchMethodException e) { 
-} catch(IllegalAccessException e) { 
-} catch(InvocationTargetException e) { 
-} 
-*/ 
-} 
+    @Test
+    public void testCacheAccessOrder() {
+        cache.put(1, 1);
+        cache.put(2, 2);
+        assertEquals(cache.get(1), 1);
+        cache.put(3, 3);
+        assertEquals(cache.get(2), -1);
+        cache.put(4, 4);
+        assertEquals(cache.get(1), -1);
+        assertEquals(cache.get(3), 3);
+        assertEquals(cache.get(4), 4);
+    }
 
-} 
+    @Test
+    public void testCacheUpdate() {
+        cache.put(1, 1);
+        cache.put(2, 2);
+        cache.put(1, 10);
+        assertEquals(cache.get(1), 10);
+    }
+
+}

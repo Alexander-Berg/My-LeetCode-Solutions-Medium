@@ -1,5 +1,5 @@
 public class UniquePath {
-    class Solution {
+   public static class Solution {
         //DP solution.
 
         public int uniquePaths(int m, int n) {
